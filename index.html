@@ -17,10 +17,13 @@
   <link class="fab fa-cuttlefish" rel="shortcut icon">
 
   <title>Torque Capacitaciones</title>
+  <!-- set favicon -->
+  <link rel="icon" href="images/logo.jfif" type="image/jfif" sizes="16x16">
 
   <!-- bootstrap core css -->
   <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.css" /> -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <!-- font awesome style -->
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -33,12 +36,12 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body class="preload" style="position: relative; overflow-x: hidden; scroll-behavior: smooth !important;" data-spy="#scroll" data-target="#nav" data-offset="20" smoothScroll="true">
+<body class="preload" style="position: relative; overflow-x: hidden; scroll-behavior: smooth !important;">
   <div id="loading" class="loading">
     <div class="lds-dual-ring"></div>
   </div>
 
-      <!-- header section strats -->
+  <!-- header section strats -->
   <header style="color:white !important; background-color: rgb(255,199,0); position: sticky; top: 0px; z-index: 999; -webkit-box-shadow: 0px 7px 19px -4px rgba(0,0,0,0.65);
   -moz-box-shadow: 0px 7px 19px -4px rgba(0,0,0,0.65);
   box-shadow: 0px 7px 19px -4px rgba(0,0,0,0.65);">
@@ -47,30 +50,31 @@
         <a class="navbar-brand" href="index.html">
           <img src="images/logo.jfif" alt="" style="max-height: 50px; max-width: 200px">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-          aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse ms-auto" id="navbarSupportedContent">
           <ul class="navbar-nav mb-2 mb-lg-0 ">
-            <li class="nav-item ms-auto me-1 ">
-              <a class="nav-link" href="#inicio" data-bs-smoothScroll="true" style="font-weight: bold;">Inicio</a>
+            <li class="nav-item ms-auto me-1">
+              <a class="nav-link" href="#inicio" style="font-weight: bold;" data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse.show">¿Quiénes somos?</a>
             </li>
             <li class="nav-item ms-auto me-1">
-              <a class="nav-link" href="#inicio" style="font-weight: bold;">¿Quiénes somos?</a>
+              <a class="nav-link" href="#mision" style="font-weight: bold;" data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse.show">Misión</a>
             </li>
             <li class="nav-item ms-auto me-1">
-              <a class="nav-link" href="#mision" data-bs-smoothScroll="true" style="font-weight: bold;">Misión</a>
+              <a class="nav-link" href="#vision" style="font-weight: bold;" data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse.show">Visión</a>
             </li>
             <li class="nav-item ms-auto me-1">
-              <a class="nav-link" href="#vision" style="font-weight: bold;">Visión</a>
+              <a class="nav-link" href="#servicios" style="font-weight: bold;" data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse.show">Servicios</a>
             </li>
             <li class="nav-item ms-auto me-1">
-              <a class="nav-link" href="#servicios" style="font-weight: bold;">Servicios</a>
-            </li>
-            <li class="nav-item ms-auto me-1">
-              <a class="nav-link" href="#contacto" style="font-weight: bold;">Contacto</a>
+              <a class="nav-link" href="#contacto" style="font-weight: bold;" data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse.show">Contacto</a>
             </li>
           </ul>
         </div>
@@ -79,10 +83,10 @@
   </header>
   <!-- end header section -->
 
-  <div id="page">
+  <div id="page" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-smooth-scroll="true" tabindex="0">
     <div>
       <!-- slider section -->
-      <section id="inicio" style="background-color: black; padding-top: 110px; padding-bottom: 40px;">
+      <section id="inicio" style="background-color: rgb(186,110,76); padding-top: 90px; padding-bottom: 30px;">
         <div class="box">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -93,7 +97,7 @@
                       <h1 style="color:white">
                         ¿Quiénes somos?
                       </h1>
-                      <p style="color: rgb(255,199,0); font-size: 1.2rem;" class="col-lg-12">
+                      <p style="color: white; font-size: 1.2rem; text-align: justify; font-weight: 600;">
                         Nuestra institución nace en la ciudad de Antofagasta como resultado visionario de convertirnos
                         en aliados estratégicos de empresas que buscan soluciones a sus procesos de nivelación,
                         capacitación y perfeccionamiento de sus trabajadores en cualquiera sea el rubro y ubicación
@@ -125,14 +129,14 @@
         </div>
       </section>
       <svg class="animate__animated animate__slideInDown" style="position:relative; z-index: -1;" viewBox="0 0 500 48">
-        <path d="M0,0 L0,40 Q100,60 300,30 Q450,10 500,40 L500,0 Z" fill="black" />
+        <path d="M0,0 L0,40 Q100,60 300,30 Q450,10 500,40 L500,0 Z" fill="rgb(186,110,76)" />
       </svg>
       <!-- end slider section -->
     </div>
 
 
     <div class="wow animate__animated animate__fadeInLeft">
-      <section id="mision" class="pt-5" data-bs-smoothScroll="true" style="padding-top: 100px !important;">
+      <section id="mision" class="pt-5" style="padding-top: 100px !important;">
         <div class="box">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -144,11 +148,12 @@
                         style="width:100%; max-width: 600px;">
                     </div>
                   </div>
-                  <div class="col-md-6 text-end">
+                  <div class="col-md-6 text-end" style="padding-top: 50px;">
                     <h1 style="color:black">
                       Nuestra misión es
                     </h1>
-                    <p style="color: rgb(230, 177, 4); font-size: 1.2rem;" class="col-lg-12">
+                    <p style="color: rgb(230, 177, 4); font-size: 1.2rem; text-align: justify; font-weight: 600;"
+                      class="col-lg-12">
                       Contribuir al mundo laboral a través del desarrollo de competencias en la modernización integral y
                       global de las personas, fomentándola a través de la capacitación en procesos y sistemas
                       industriales para alcanzar los más altos estándares productivos que permitan a la empresa ser
@@ -174,9 +179,9 @@
         d="M0,64L288,192L576,256L864,160L1152,192L1440,32L1440,320L1152,320L864,320L576,320L288,320L0,320Z"></path>
     </svg>
 
-    <div style="background-color: rgb(255,199,0);">
+    <div id="vision" style="background-color: rgb(255,199,0); padding-top: 50px;">
       <div class="wow animate__animated animate__fadeInRight">
-        <section id="vision">
+        <section>
           <div class="box">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -187,7 +192,8 @@
                         <h2><b>Visión</b></h2>
                       </div>
                       <div class="d-flex flex-column align-items-center pt-4">
-                        <h5 style="text-align: justify; font-size: 1.3rem;">Nuestra visión es ser la institución de capacitación más
+                        <h5 style="text-align: justify; font-size: 1.3rem; font-weight: 600;">Nuestra visión es ser la
+                          institución de capacitación más
                           importante y confiable del mercado,
                           aportando al desarrollo de la sociedad en su conjunto, procurando siempre satisfacer
                           ampliamente
@@ -215,7 +221,7 @@
         d="M0,224L288,128L576,192L864,224L1152,128L1440,64L1440,320L1152,320L864,320L576,320L288,320L0,320Z"></path>
     </svg>
 
-    <div class="container" id="servicios">
+    <div class="container" id="servicios" style="padding-top: 50px;">
       <div class="row text-center">
         <div class="col-md-12">
           <div class="detail-box">
@@ -236,7 +242,7 @@
                     <h1 style="color:black">
                       Área Operaciones
                     </h1>
-                    <p style="color: rgb(230, 177, 4); font-size: 1.2rem;" class="col-lg-12">
+                    <p style="color: rgb(230, 177, 4); font-size: 1.2rem; font-weight: 600;" class="col-lg-12">
                       · Fundamentos Técnicos de Operaciones de Izaje y Levante (Teórico / Dirigido a operadores de
                       equipos
                       de izaje, riggers, supervisores, APR, entre otros) <br>
@@ -277,11 +283,12 @@
                         style="width:100%; max-width: 600px;">
                     </div>
                   </div>
-                  <div class="col-md-6 text-end">
+                  <div class="col-md-6 text-end" style="padding-top: 50px;">
                     <h1 style="color:black">
                       Área Seguridad
                     </h1>
-                    <p style="color: rgb(230, 177, 4); font-size: 1.2rem;" class="col-lg-12">
+                    <p style="color: rgb(230, 177, 4); font-size: 1.2rem; font-weight: 600;"
+                      class="col-lg-12 text-start">
                       · Fundamentos Técnicos, Preventivos y Legales de la Conducción (Conducción Segura / Manejo
                       Defensivo). <br>
                       · Uso y Manejo de Extintores. <br>
@@ -296,145 +303,68 @@
       </section>
     </div>
 
-    <div>
-      <div class="contact-form-wrapper d-flex justify-content-center">
-        <form action="#" class="contact-form" style="background-color: rgba(230, 177, 4, 1);">
-          <h5 class="title" style="font-size: 2rem;">Contáctanos</h5>
-          <p class="description" style="color: black; font-size: 1rem;">Te responderemos a la mayor brevedad posible
-          </p>
-          <div>
-            <input style="background-color: white;" type="text" class="form-control rounded border-white mb-3 form-input" id="name" placeholder="Nombre" required>
+    <div id="contacto" class="contact-form-wrapper d-flex justify-content-center">
+      <form action="#" class="contact-form" style="background-color: rgb(255,199,0);">
+        <h5 class="title" style="font-size: 2rem;">Contáctanos</h5>
+        <p class="description" style="color: black; font-size: 1.1rem;">Te responderemos a la mayor brevedad posible
+        </p>
+        <div>
+          <input style="background-color: white;" type="text" class="form-control rounded border-white mb-3 form-input"
+            id="name" placeholder="Nombre" required>
+        </div>
+        <div>
+          <input style="background-color: white;" type="email" class="form-control rounded border-white mb-3 form-input"
+            placeholder="Email" required>
+        </div>
+        <div>
+          <textarea id="message" style="background-color: white;"
+            class="form-control rounded border-white mb-3 form-text-area" rows="5" cols="30" placeholder="Mensaje"
+            required></textarea>
+        </div>
+        <div class="submit-button-wrapper">
+          <input type="submit" value="Enviar" style="background-color: black;">
+        </div>
+      </form>
+    </div>
+
+    <footer id="footer" class="py-5" style="background-color: rgb(82,82,82);">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <div class="col-md-6">
+            <div class="align-center" style="color:whitesmoke; font-size: 1.2rem;">
+              <p>Capacítate con nosotros</p>
+            </div>
+            <div class="d-flex align-items-center justify-content-center gap-4">
+              <a href="https://www.linkedin.com/in/torque-capacitaciones-spa-00b169103/?originalSubdomain=cl" target="_blank">
+                <svg fill="whitesmoke" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </a>
+              <a href="https://web.facebook.com/torquecapacitaciones/?locale=es_LA&_rdc=1&_rdr" target="_blank">
+                <svg fill="whitesmoke" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-3 7h-1.924c-.615 0-1.076.252-1.076.889v1.111h3l-.238 3h-2.762v8h-3v-8h-2v-3h2v-1.923c0-2.022 1.064-3.077 3.461-3.077h2.539v3z"/></svg>
+              </a>
+              <a href="https://twitter.com/torquecapacita" target="_blank">
+                <svg fill="whitesmoke" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-.139 9.237c.209 4.617-3.234 9.765-9.33 9.765-1.854 0-3.579-.543-5.032-1.475 1.742.205 3.48-.278 4.86-1.359-1.437-.027-2.649-.976-3.066-2.28.515.098 1.021.069 1.482-.056-1.579-.317-2.668-1.739-2.633-3.26.442.246.949.394 1.486.411-1.461-.977-1.875-2.907-1.016-4.383 1.619 1.986 4.038 3.293 6.766 3.43-.479-2.053 1.08-4.03 3.199-4.03.943 0 1.797.398 2.395 1.037.748-.147 1.451-.42 2.086-.796-.246.767-.766 1.41-1.443 1.816.664-.08 1.297-.256 1.885-.517-.439.656-.996 1.234-1.639 1.697z"/></svg>
+              </a>
+            </div>
           </div>
-          <div>
-            <input style="background-color: white;" type="email" class="form-control rounded border-white mb-3 form-input" placeholder="Email" required>
+          <div class="col-md-6 align-center">
+              <img src="./images/logo.jpeg" alt="Logo" style="max-width: 400px !important; width: calc(100% - 10px);">
           </div>
-          <div>
-            <textarea id="message" style="background-color: white;" class="form-control rounded border-white mb-3 form-text-area" rows="5" cols="30" placeholder="Mensaje" required></textarea>
-          </div>
-          <div class="submit-button-wrapper">
-            <input type="submit" value="Enviar" style="background-color: black;">
-          </div>
-        </form>
+        </div>
+        <hr class="my-3" style="background-color: white; color: white; padding-top: 2px;">
+        <div class="align-center">
+          <p style="color:whitesmoke; font-size: 1.2rem;">Torque Capacitaciones SpA © 2021</p>
+        </div>
       </div>
-
-      <footer class="footer">
-        <!-- Call-action -->
-        <div class="call-action">
-            <div class="container">
-                <div class="inner-content">
-                    <div class="row align-items-center">
-                        <div class="col-12 align-center">
-                            <h2>Capacítate con nosotros</h2>
-                            <!-- <p>Somos líderes en seguridad</p> -->
-                        </div>
-                        <div class="col-12 align-center">
-                            <div class="button">
-                                <!-- <a href="#" class="btn">Get started on a project</a> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Call-action -->
-
-
-<!-- footer-middle -->
-        <div class="footer-middle">
-            <div class="container">
-                <div class="row">
-                   
-                    <div class="col-lg-8 col-md-8 col-12">
-                        <div class="row">
-                            <div class="col-lg-3 col-md-6 col-12">
-
-                                <div class="single-footer sm-custom-border f-link">
-                                    <h3>Pages</h3>
-                                    <ul>
-                                        <li><a href="about-us.html">About Us</a></li>
-                                        <li><a href="service-single.html">Our Services</a></li>
-                                        <li><a href="contact.html">Contact Us</a></li>
-                                        <li><a href="blog-grid-sidebar.html">Our Blog</a></li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-12">
-
-                                <div class="single-footer sm-custom-border f-link">
-                                    <h3>Product</h3>
-                                    <ul>
-                                        <li><a href="index2.html">Features</a></li>
-                                        <li><a href="pricing.html">Pricing</a></li>
-                                        <li><a href="blog-grid-sidebar.html">News</a></li>
-                                        <li><a href="contact.html">Support</a></li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-12">
-
-                                <div class="single-footer md-custom-border sm-custom-border f-link">
-                                    <h3>Services</h3>
-                                    <ul>
-                                        <li><a href="services.html">Digital Marketing</a></li>
-                                        <li><a href="blog-single-sidebar.html">Content Writing</a></li>
-                                        <li><a href="blog-single.html">SEO for Business</a></li>
-                                        <li><a href="service-single.html">UI Design</a></li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-12">
-
-                                <div class="single-footer md-custom-border sm-custom-border f-link">
-                                    <h3>Pages</h3>
-                                    <ul>
-                                        <li><a href="contact.html">Contact</a></li>
-                                        <li><a href="portfolio.html">portfolio</a></li>
-                                        <li><a href="team-single.html">Support Team</a></li>
-                                        <li><a href="faq.html">Faq</a></li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-4 col-12">
-
-                        <div class="f-about single-footer">
-                            <div class="logo">
-                                <a href="index1.html"><img src="./images/logo.jpeg" alt="Logo"></a>
-                            </div>
-                            <!-- <p>Start building your creative website with our awesome template Earny.</p>
-                            <div class="footer-social">
-                                <ul>
-                                    <li><a href="#"><i class="lni lni-facebook-original"></i></a></li>
-                                    <li><a href="#"><i class="lni lni-twitter-original"></i></a></li>
-                                    <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
-                                    <li><a href="#"><i class="lni lni-google"></i></a></li>
-                                </ul>
-                            </div> -->
-                        </div>
-
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
- <!-- End footer-middle -->
-
     </footer>
-
 
   </div>
 
   <script src="js/jquery-3.4.1.min.js"></script>
   <!-- wow.js -->
   <script src="https://wowjs.uk/dist/wow.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
 
   <script src="index.js"></script>
 
